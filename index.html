@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Login</title></head>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<body background="images\hola.png">
+	
+<div>
+	<center>
+		<h1>!Bienvenido!</h1>
+		<style type="text/css">
+
+			::selection
+            {
+                background-color: #E13300; color: white;
+            }
+
+            ::-moz-selection
+            { background-color: #E13300; color: white;
+            }
+
+			body
+            {
+                background-color: #fff;
+                margin: 40px;
+                font: 13px/20px normal Helvetica, Arial, sans-serif;
+                color: #4F5155;
+            }
+
+              a
+            {
+                color: #003399;
+                background-color: transparent;
+                font-weight: normal;
+            }
+
+            #body
+            {
+                margin: 0 20px 0 20px;
+            }
+            p.footer
+            {
+                text-align: center;
+                font-size: 11px;
+                border-top: 1px solid #D0D0D0;
+                line-height: 32px;
+                padding: 0 10px 0 10px;
+                margin: 20px 0 0 0;
+            }
+
+            #container
+            {
+                margin: 10px;
+                border: 1px solid #0D663D;
+                box-shadow: 0 0 8px #0D663D;
+            }
+
+            
+
+        </style>
+
+        <form method="POST" action="validar.php">
+        	<table>
+        		<tr>
+        			<td>Usuario</td>	
+        			<td><input type="text" name="nombuser" id="nombuser"></td>
+        		</tr>
+        		<tr>
+        			<td>Pasword</td>	
+        			<td><input type="password" name="pass" id="pass"></td>
+        		</tr>
+        		
+        	</table>
+                <div class="g-recaptcha" data-sitekey="6LeMi8IUAAAAAMpyRUYv82TSCQ61VBtA-23L2Lzx"></div>
+        	<button type="submit">Iniciar Sesion</button>
+        </form>
+		<!--<form method="POST" action="validar.php">
+			<br>
+			<input size="30" maxlength="30" type="text" name="nombuser" placeholder="Usuario" />
+			<br>
+			<br />
+			<input size="30" maxlength="30" type="password" name="pass" placeholder="Contraseña" />
+			<br />
+			
+		 <br>
+		<tr>
+			<img src="captcha.php">
+			<br>
+			<td> <input type="text" id="captcha" size="15" name="captcha" placeholder="Ingresa los digítos"/> </td>
+		</tr>
+
+	</center>
+
+
+ <br>
+	<center><button type="submit">Iniciar Sesion</button></center>
+	</form>
+!-->
+</div>
+</body>
+
+
+
